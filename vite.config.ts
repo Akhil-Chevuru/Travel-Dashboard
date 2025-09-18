@@ -8,6 +8,10 @@ export default defineConfig(({ mode }) => ({
       fastRefresh: mode !== 'production',
     }),
   ],
+  build: {
+    minify: 'esbuild',
+    sourcemap: false,
+  },
   optimizeDeps: {
     exclude: ['lucide-react'],
   },
