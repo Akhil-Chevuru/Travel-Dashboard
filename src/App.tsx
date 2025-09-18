@@ -1075,5 +1075,3 @@ function App() {
 }
 
 export default App;
-
-var _c;$RefreshReg$(_c, "App");
