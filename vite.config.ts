@@ -3,7 +3,10 @@ import react from '@vitejs/plugin-react';
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [react()],
+  plugins: [react({
+    // Disable fast refresh in production
+    fastRefresh: process.env.NODE_ENV !== 'production'
+  })],
   optimizeDeps: {
     exclude: ['lucide-react'],
   },
